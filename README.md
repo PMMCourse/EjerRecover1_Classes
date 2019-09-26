@@ -6,5 +6,6 @@ Partiendo de una clase base campesino. Crear las diferentes clases. Añadir los 
 
 Añadir las diferentes interfaces, de usuarios de magia, exploradores, etc.
 
-añade también la posibilidad de que los diferentes personajes puedan unirse a parties.
+Añade también la posibilidad de que los diferentes personajes puedan unirse a parties.
+
 También añade la posibilidad de que solo un tipo de clase se pueda unir a gremios.
