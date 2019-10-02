@@ -9,3 +9,7 @@ Añadir las diferentes interfaces, de usuarios de magia, exploradores, etc.
 Añade también la posibilidad de que los diferentes personajes puedan unirse a parties.
 
 También añade la posibilidad de que solo un tipo de clase se pueda unir a gremios.
+
+---
+
+Si no os sentís comodos con el hecho de implementar MMO. Implementar cualquier genero que os guste. :D Sentiros libres
