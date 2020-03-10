@@ -1,15 +1,10 @@
 # ClassInheritExercise
 
-Con lo aprendido en clase debemos realizar una aplicación que nos indique las diferentes clases de personaje de un MMO. 
+Con lo aprendido de clases, crea una estructura de un colegio.
 
-Partiendo de una clase base campesino. Crear las diferentes clases. Añadir los parametros que un personaje puede tener. HP, MP, Exp...
-
-Añadir las diferentes interfaces, de usuarios de magia, exploradores, etc.
-
-Añade también la posibilidad de que los diferentes personajes puedan unirse a parties.
-
-También añade la posibilidad de que solo un tipo de clase se pueda unir a gremios.
+Crea una clase base indicando los valores básicos de persona, para crear diferentes clases de alumno y profesor. 
+Ten por cuenta el uso de interfaces para indicar por ejemplo los diferentes niveles de estudios
+Introduce dentro diferentes clases, como puede ser la clase asignatura y sus diferentes valores
 
 ---
 
-Si no os sentís comodos con el hecho de implementar MMO. Implementar cualquier genero que os guste. :D Sentiros libres
