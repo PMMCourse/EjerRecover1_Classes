@@ -25,7 +25,7 @@ namespace ClassInheritExercise
         {
         }
 
-        public void irDesayuno() => throw new NotImplementedException();
-        public void comprarPan() => throw new NotImplementedException();
+        public void IrDesayuno() => throw new NotImplementedException();
+        public void ComprarPan() => throw new NotImplementedException();
     }
 }

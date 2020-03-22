@@ -5,8 +5,8 @@
         string Estudios { get; set; }
         int Matricula { get; set; }
 
-        void estudiarCosas();
-        void hacerDeberesDeCosas();
-        void meterseEnDiscord();
+        void EstudiarCosas(IAsignatura a, int tiempoEstudio, IProfesor ch);
+        bool HacerDeberesDeCosas(bool aproElTiempo);
+        void MeterseEnDiscord(bool entrar);
     }
 }

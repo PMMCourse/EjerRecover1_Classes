@@ -6,8 +6,8 @@
         Asignatura ProfeDe { get; set; }
         string titulo { get; set; }
 
-        void aprobarCosas();
-        void darClasesDeCosas();
-        void suspenderCosas();
+        bool AprobarCosas();
+        void DarClasesDeCosas();
+        bool SuspenderCosas(IAlumno jc, bool yaMeReireYo);
     }
 }

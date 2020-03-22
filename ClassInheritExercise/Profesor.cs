@@ -23,8 +23,21 @@ namespace ClassInheritExercise
             Dni = dni;
         }
 
-        public void suspenderCosas() => throw new NotImplementedException();
-        public void aprobarCosas() => throw new NotImplementedException();
-        public void darClasesDeCosas() => throw new NotImplementedException();
+        public bool SuspenderCosas(IAlumno jc, bool yaMeReireYo)
+        {
+            if (jc.HacerDeberesDeCosas(false) && yaMeReireYo == true)
+            {
+                return true;
+            }
+            else
+            {
+                return AprobarCosas();
+            }
+        }
+        public bool AprobarCosas()
+        {
+            return false;
+        }
+        public void DarClasesDeCosas() => throw new NotImplementedException();
     }
 }

@@ -24,8 +24,32 @@ namespace ClassInheritExercise
             Dni = dni;
         }
 
-        public void estudiarCosas() => throw new NotImplementedException();
-        public void hacerDeberesDeCosas() => throw new NotImplementedException();
-        public void meterseEnDiscord() => throw new NotImplementedException(); //Tenia que poner algo sino reventaba
+        public void EstudiarCosas(IAsignatura a, int tiempoEstudio, IProfesor p)
+        {
+            if (tiempoEstudio > 0)
+            {
+                throw new Exception("Ha estudiado " + a.nombre + " " + tiempoEstudio + " horas") ;
+            }
+            else
+            {
+                p.SuspenderCosas(true);
+            }
+        }
+        public bool HacerDeberesDeCosas(bool aproElTiempo)
+        {
+            return aproElTiempo;
+        }
+        public void MeterseEnDiscord(bool entrar)
+        {
+            if (entrar == true)
+            {
+                HacerDeberesDeCosas(false);
+            }
+            else
+            {
+                throw new Exception("Se puede aprobar todavia");
+            }
+            
+        }
     }
 }
