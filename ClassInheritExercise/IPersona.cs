@@ -2,9 +2,9 @@
 {
     public interface IPersona
     {
-        string _apellido { get; set; }
-        string _correo { get; set; }
-        string _DNI { get; set; }
-        string _nombre { get; set; }
+        string Apellido { get; set; }
+        string Correo { get; set; }
+        string DNI { get; set; }
+        string Nombre { get; set; }
     }
 }

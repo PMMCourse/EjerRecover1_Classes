@@ -1,9 +1,9 @@
 ﻿namespace ClassInheritExercise
 {
-    interface IAlumno
+    public interface IAlumno
     {
-        string _curso { get; set; }
-        string _faltas { get; set; }
-        int _idCurso { get; set; }
+        string Curso { get; set; }
+        string Faltas { get; set; }
+        int IdCurso { get; set; }
     }
 }

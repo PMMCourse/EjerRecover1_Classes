@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClassInheritExercise
 {
-    class Alumno : IAlumno
+    public class Alumno : IAlumno
     {
-        private string Curso;
-        private int IdCurso;
-        private string Faltas;
+        private string _Curso;
+        private int _IdCurso;
+        private string _Faltas;
 
-        public string _curso { get => Curso; set => Curso = value; }
-        public int _idCurso { get => IdCurso; set => IdCurso = value; }
-        public string _faltas { get => Faltas; set => Faltas = value; }
+        public string Curso { get => _Curso; set => _Curso = value; }
+        public int IdCurso { get => _IdCurso; set => _IdCurso = value; }
+        public string Faltas { get => _Faltas; set => _Faltas = value; }
         public Alumno(string Curso, int IdCurso, string Faltas)
         {
-            _curso = Curso;
-            _idCurso = IdCurso;
-            _faltas = Faltas;
+            Curso = _Curso;
+            IdCurso = _IdCurso;
+            Faltas = _Faltas;
         }
         public Alumno() { }
     }

@@ -8,20 +8,21 @@ namespace ClassInheritExercise
 {
     public class Profesor : Persona, IProfesor
     {
-        private string Departamento;
-        private string AsignaturaQueDa;
-        private string HorasImpartidas;
+        private string _Departamento;
+        private string _AsignaturaQueDa;
+        private string _HorasImpartidas;
 
-        public string _departamento { get => Departamento; set => Departamento = value; }
-        public string _asignaturaQueDa { get => AsignaturaQueDa; set => AsignaturaQueDa = value; }
-        public string _horasImpartidas { get => HorasImpartidas; set => HorasImpartidas = value; }
+        public string Departamento { get => _Departamento; set => _Departamento = value; }
+        public string AsignaturaQueDa { get => _AsignaturaQueDa; set => _AsignaturaQueDa = value; }
+        public string HorasImpartidas { get => _HorasImpartidas; set => _HorasImpartidas = value; }
         public Profesor(string Departamento, string AsignaturaQueDa, string HorasImpartidas)
         {
-            _departamento = Departamento;
-            _asignaturaQueDa = AsignaturaQueDa;
-            _horasImpartidas = HorasImpartidas;
+            Departamento = _Departamento;
+            AsignaturaQueDa = _AsignaturaQueDa;
+            HorasImpartidas = _HorasImpartidas;
         }
         public Profesor() { }
 
+        
     }
 }

@@ -2,8 +2,8 @@
 {
     public interface IProfesor
     {
-        string _asignaturaQueDa { get; set; }
-        string _departamento { get; set; }
-        string _horasImpartidas { get; set; }
+        string AsignaturaQueDa { get; set; }
+        string Departamento { get; set; }
+        string HorasImpartidas { get; set; }
     }
 }

@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace ClassInheritExercise
 {
-    class Asignatura : IAsignatura
+    public class Asignatura : IAsignatura
     {
-        private string Nombre;
-        private string IdNombre;
-        private string QuienImparte;
-        private int Horas;
+        private string _Nombre;
+        private string _IdNombre;
+        private Profesor _QuienImparte;
+        private int _Horas;
 
-        public string _nombre { get => Nombre; set => Nombre = value; }
-        public string _idNombre { get => IdNombre; set => IdNombre = value; }
-        public string _quienImparte { get => QuienImparte; set => QuienImparte = value; }
-        public int _horas { get => Horas; set => Horas = value; }
+        public string Nombre { get => _Nombre; set => _Nombre = value; }
+        public string IdNombre { get => _IdNombre; set => _IdNombre = value; }
+        public Profesor QuienImparte { get => _QuienImparte; set => _QuienImparte = value; }
+        public int Horas { get => _Horas; set => _Horas = value; }
 
         public Asignatura(string Nombre, string IdNombre, string QuienImparte, int Horas)
         {
-            _nombre = Nombre;
-            _idNombre = Nombre;
-            _quienImparte = QuienImparte;
-            _horas = Horas;
+            Nombre = _Nombre;
+            IdNombre = _IdNombre;
+            Horas = _Horas;
+        }
+        public Asignatura(Profesor QuienImparte)
+        {
+            QuienImparte = _QuienImparte;
         }
         public Asignatura() { }
     }

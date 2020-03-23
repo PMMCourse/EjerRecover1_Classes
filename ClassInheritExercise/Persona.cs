@@ -8,24 +8,24 @@ namespace ClassInheritExercise
 {
     public class Persona : IPersona
     {
-        private string Nombre;
-        private string Apellido;
-        private string Correo;
-        private string DNI;
+        private string _Nombre;
+        private string _Apellido;
+        private string _Correo;
+        private string _DNI;
 
-        public string _nombre { get => Nombre; set => Nombre = value; }
-        public string _apellido { get => Apellido; set => Apellido = value; }
-        public string _correo { get => Correo; set => Correo = value; }
-        public string _DNI { get => DNI; set => DNI = value; }
+        public string Nombre { get => _Nombre; set => _Nombre = value; }
+        public string Apellido { get => _Apellido; set => _Apellido = value; }
+        public string Correo { get => _Correo; set => _Correo = value; }
+        public string DNI { get => _DNI; set => _DNI = value; }
 
         public Persona(string Nombre, string Apellido, string Correo, string DNI)
         {
-            _nombre = Nombre;
-            _apellido = Apellido;
-            _correo = Correo;
-            _DNI = DNI;
+            Nombre = _Nombre;
+            Apellido = _Apellido;
+            Correo = _Correo;
+            DNI = _DNI;
         }
-        public Persona() {}
+        public Persona() { }
 
     }
 }

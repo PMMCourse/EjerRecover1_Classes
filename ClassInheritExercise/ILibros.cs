@@ -1,9 +1,9 @@
 ﻿namespace ClassInheritExercise
 {
-    interface ILibros
+    public interface ILibros
     {
-        string _Nombre { get; set; }
-        int _Numtemas { get; set; }
-        string _Trimestre { get; set; }
+        string LibrosNombre { get; set; }
+        int NumTemas { get; set; }
+        string Trimestre { get; set; }
     }
 }

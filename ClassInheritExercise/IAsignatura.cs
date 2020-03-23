@@ -1,10 +1,10 @@
 ﻿namespace ClassInheritExercise
 {
-    interface IAsignatura
+    public interface IAsignatura
     {
-        int _horas { get; set; }
-        string _idNombre { get; set; }
-        string _nombre { get; set; }
-        string _quienImparte { get; set; }
+        int Horas { get; set; }
+        string IdNombre { get; set; }
+        string Nombre { get; set; }
+        Profesor QuienImparte { get; set; }
     }
 }
