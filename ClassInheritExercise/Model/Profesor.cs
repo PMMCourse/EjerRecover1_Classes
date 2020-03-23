@@ -8,7 +8,7 @@ namespace ClassInheritExercise.Model
 {
     public class Profesor : Persona
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public List<Asignatura> Asig { get; set; }
     }
 }
