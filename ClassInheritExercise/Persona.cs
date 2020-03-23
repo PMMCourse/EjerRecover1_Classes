@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClassInheritExercise
 {
-    class Persona
+    abstract class Persona
     {
-        private string nombre;
-        private string primerApellido;
-        private string segundoApellido;
-        private string dni;
+        protected string nombre;
+        protected string primerApellido;
+        protected string segundoApellido;
+        protected string dni;
 
         public Persona() { }
 
@@ -22,5 +22,10 @@ namespace ClassInheritExercise
             this.segundoApellido = segundoApellido;
             this.dni = dni;
         }
+
+        public string Nombre { get; set; }
+        public string PrimerApellido { get; set; }
+        public string SegundoApellido { get; set; }
+        public string Dni { get; set; }
     }
 }

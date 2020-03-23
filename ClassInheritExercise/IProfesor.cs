@@ -1,11 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassInheritExercise
 {
-    internal interface IProfesor
+    interface IProfesor
     {
         string departamento { get; set; }
-        List<Asignatura> asignaturas { get; set; }
+        List<Asignatura> listaAsignaturaProfesor { get; set; }
 
         void ImpartirAsignatura();
         void CalificarPractica();

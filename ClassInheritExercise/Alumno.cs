@@ -11,20 +11,25 @@ namespace ClassInheritExercise
         public string modalidad { get; set; }
         public int curso { get; set; }
         public char letraCurso { get; set; }
-        public List<Asignatura> asignaturas { get; set; }
+        public List<Asignatura> listaAsignaturaAlumno { get; set; }
 
-        public Alumno() {}
+        public Alumno () { }
 
-        public Alumno(string modalidad, int curso, char letraCurso, List<Asignatura> asignaturas)
+        public Alumno(string modalidad, int curso, char letraCurso, List<Asignatura> listaAsignaturaAlumno)
         {
             this.modalidad = modalidad;
             this.curso = curso;
             this.letraCurso = letraCurso;
-            this.asignaturas = asignaturas;
+            this.listaAsignaturaAlumno = listaAsignaturaAlumno;
         }
 
-        public Boolean AsisteClase() { return false; }
+        public bool AsisteClase()
+        {
+            return false;
+        }
 
-        public void EntregarTarea() {}
+        public void EntregarTarea()
+        {
+        }
     }
 }

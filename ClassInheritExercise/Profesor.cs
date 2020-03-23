@@ -9,20 +9,26 @@ namespace ClassInheritExercise
     class Profesor : Persona, IProfesor
     {
         public string departamento { get; set; }
-        public List<Asignatura> asignaturas { get; set; }
+        public List<Asignatura> listaAsignaturaProfesor { get; set; }
 
-        public Profesor() {}
+        public Profesor() { }
 
-        public Profesor(string departamento, List<Asignatura> asignaturas)
+        public Profesor(string departamento, List<Asignatura> listaAsignaturaProfesor)
         {
             this.departamento = departamento;
-            this.asignaturas = asignaturas;
+            this.listaAsignaturaProfesor = listaAsignaturaProfesor;
         }
 
-        public void CalificarExamen() {}
+        public void CalificarExamen()
+        {
+        }
 
-        public void CalificarPractica() {}
+        public void CalificarPractica()
+        {
+        }
 
-        public void ImpartirAsignatura() {}
+        public void ImpartirAsignatura()
+        {
+        }
     }
 }

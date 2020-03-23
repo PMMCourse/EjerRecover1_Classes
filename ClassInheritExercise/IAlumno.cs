@@ -1,13 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassInheritExercise
 {
-    internal interface IAlumno
+    interface IAlumno
     {
         string modalidad { get; set; }
         int curso { get; set; }
         char letraCurso { get; set; }
-        List<Asignatura> asignaturas { get; set; }
+        List<Asignatura> listaAsignaturaAlumno { get; set; }
 
         bool AsisteClase();
         void EntregarTarea();
