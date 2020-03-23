@@ -25,7 +25,13 @@ namespace ClassInheritExercise
         {
         }
 
-        public void IrDesayuno() => throw new NotImplementedException();
-        public void ComprarPan() => throw new NotImplementedException();
+        public bool IrDesayuno(bool hambre)
+        {
+            return hambre; //Devuelve si tiene hambre para ir a desayunar
+        }
+        public void ComprarPan(int cant)
+        {
+            throw new Exception("Ha comprado " + cant + " piezas de pan");
+        }
     }
 }

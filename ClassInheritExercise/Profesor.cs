@@ -22,7 +22,10 @@ namespace ClassInheritExercise
             Apellido = apellido;
             Dni = dni;
         }
+        public Profesor()
+        {
 
+        }
         public bool SuspenderCosas(IAlumno jc, bool yaMeReireYo)
         {
             if (jc.HacerDeberesDeCosas(false) && yaMeReireYo == true)
@@ -38,6 +41,9 @@ namespace ClassInheritExercise
         {
             return false;
         }
-        public void DarClasesDeCosas() => throw new NotImplementedException();
+        public void DarClasesDeCosas()
+        {
+            throw new Exception("*** Comienza la clase ***");
+        }
     }
 }

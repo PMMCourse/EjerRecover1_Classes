@@ -24,7 +24,12 @@ namespace ClassInheritExercise
             Dni = dni;
         }
 
-        public void EstudiarCosas(IAsignatura a, int tiempoEstudio, IProfesor p)
+        public Alumno()
+        {
+
+        }
+
+        public void EstudiarCosas(IAsignatura a, int tiempoEstudio, IProfesor p, IAlumno f)
         {
             if (tiempoEstudio > 0)
             {
@@ -32,7 +37,7 @@ namespace ClassInheritExercise
             }
             else
             {
-                p.SuspenderCosas(true);
+                p.SuspenderCosas(f, true);
             }
         }
         public bool HacerDeberesDeCosas(bool aproElTiempo)

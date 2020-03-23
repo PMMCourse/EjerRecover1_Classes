@@ -6,9 +6,7 @@
         string Dni { get; set; }
         string Nombre { get; set; }
 
-        bool AprobarCosas();
-        void ComprarPan();
-        void IrDesayuno();
-        bool SuspenderCosas(IAlumno jc, bool yaMeReireYo);
+        void ComprarPan(int cant);
+        bool IrDesayuno(bool hambre);
     }
 }
