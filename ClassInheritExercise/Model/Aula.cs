@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassInheritExercise.Model
 {
-    public class Asignatura
+    public class Aula
     {
         public string Name { get; set; }
-        public int WeeklyHours { get; set; }
-        public int TotalHours { get; set; }
-        public Profesor Teacher { get; set; }
+        public int Tables { get; set; }
+        public int Chairs { get; set; }
     }
 }

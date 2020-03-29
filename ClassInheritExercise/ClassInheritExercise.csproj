@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Model\Alumno.cs" />
     <Compile Include="Model\Asignatura.cs" />
+    <Compile Include="Model\Aula.cs" />
     <Compile Include="Model\Persona.cs" />
     <Compile Include="Model\Profesor.cs" />
     <Compile Include="Program.cs" />
